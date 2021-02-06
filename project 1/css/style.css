@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))), url("../images/banner2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../images/banner2.jpg");
+  background-size: cover;
+  padding: 0 70px 30px 70px;
+}
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+.nav-wrapper .logo img {
+  width: 10rem;
+}
+
+.nav-wrapper .main-menu .menu-items-main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+}
+
+.nav-wrapper .main-menu .menu-items-main li a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-wrapper .main-menu .menu-items-main li img {
+  vertical-align: middle;
+}
+
+.nav-wrapper .main-menu .menu-items-main li:last-child {
+  width: 1rem;
+}
+
+.text-box-wrapper {
+  position: relative;
+  width: 90%;
+  padding: 5rem 0 15rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 100px;
+          flex: 2 1 100px;
+  margin: 0 5%;
+  color: #fff;
+}
+
+.text-box-wrapper .text-bg {
+  max-width: 700px;
+}
+
+.text-box-wrapper .text-bg h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  line-height: 140%;
+}
+
+.text-box-wrapper .text-bg .b_bold {
+  font-size: 5rem;
+}
+
+.text-box-wrapper .text-bg span {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  display: block;
+  text-align: justify;
+}
+
+.text-box-wrapper .text-bg a {
+  color: cadetblue;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 4rem;
+  background: #fff;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.text-box-wrapper .text-img img {
+  width: 25rem;
+}
+
+@media (max-width: 1100px) {
+  .text-box-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .text-box-wrapper div {
+    margin: 2rem 0;
+  }
+}
+
+.about-wrapper {
+  background-image: url("../images/about_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin-top: -255px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-wrapper .about-text {
+  background-color: midnightblue;
+  color: white;
+  max-width: 1000px;
+  margin: 15rem 0 5rem 0;
+  padding: 3rem 2rem;
+}
+
+.about-wrapper .about-text h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.about-wrapper .about-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+}
+
+.about-wrapper .about-text p {
+  font-size: 1.3rem;
+  margin: 3rem 0;
+  text-align: justify;
+}
+
+.about-wrapper .about-text a {
+  font-weight: bolder;
+  text-align: center;
+  color: cadetblue;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4rem;
+  background: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about-bottom-wrapper {
+  margin: 5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.about-bottom-wrapper .picture {
+  background: red;
+}
+
+.about-bottom-wrapper .picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-bottom-wrapper .about-bottom-text {
+  background: midnightblue;
+  color: #fff;
+  padding: 5rem 3rem;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about-bottom-wrapper .about-bottom-text h1 {
+  margin: 2rem 0;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.about-bottom-wrapper .about-bottom-text p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 5rem 0;
+}
+
+.about-bottom-wrapper .about-bottom-text a {
+  font-weight: bolder;
+  text-align: center;
+  color: cadetblue;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4rem;
+  background: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media (max-width: 1100px) {
+  .about-bottom-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.casino-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem 0;
+  background-color: light-blue;
+}
+
+.casino-wrapper .casino-text {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.casino-wrapper .casino-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.casino-wrapper .casino-text h1::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  background: #000;
+}
+
+.casino-wrapper .casino-text p {
+  font-size: 1.2rem;
+}
+
+.swiper-container {
+  width: 100vw;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7rem 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  position: relative;
+}
+
+.swiper-slide p {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: #000;
+  padding: 3rem;
+  border-radius: 3rem;
+  position: absolute;
+  color: #fff;
+  top: 90%;
+}
+
+.swiper-button-next {
+  left: 50%;
+}
+
+.swiper-button-prev {
+  left: 45%;
+}
+
+.book-wrapper {
+  background-image: url(../images/contact.jpg);
+  background-size: 100vw 100%;
+  text-align: center;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book-wrapper .background {
+  padding: 5rem 3rem;
+  color: #fff;
+  max-width: 1500px;
+}
+
+.book-wrapper .background h1 {
+  font-size: 3rem;
+  padding: 3rem 0;
+  text-decoration: underline;
+}
+
+.book-wrapper .background .card {
+  background: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.book-wrapper .background .card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.book-wrapper .background .card form input,
+.book-wrapper .background .card form textarea,
+.book-wrapper .background .card form input:focus,
+.book-wrapper .background .card form textarea:focus {
+  padding: 1rem;
+  border: 1px solid rgba(180, 178, 178, 0.938);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.book-wrapper .background .card form button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem 2rem;
+  background: #000;
+  color: white;
+  border-radius: 5px;
+}
+
+.book-wrapper .background .card .img {
+  width: 600px;
+}
+
+.book-wrapper .background .card .img img {
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.testimonial-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 2rem;
+}
+
+.testimonial-wrapper .middle {
+  width: 1200px;
+}
+
+.testimonial-wrapper h1 {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+.testimonial-wrapper .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial-wrapper .img img {
+  width: 10rem;
+}
+
+.testimonial-wrapper p {
+  text-align: center;
+}
+
+.testimonial-wrapper .name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.testimonial-wrapper .comment {
+  font-weight: 1.4rem;
+  font-weight: bold;
+  color: #545451;
+}
+
+.testimonial-wrapper .text {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+/*# sourceMappingURL=style.css.map */
